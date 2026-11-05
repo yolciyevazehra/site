@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import logo from '../assets/logo.png';
 import { SlBasket } from "react-icons/sl";
 import { IoSearch } from "react-icons/io5";
+import { Link } from 'react-router';
 
 
 function Header() {
@@ -104,45 +105,45 @@ function Header() {
 
                         <ul className="flex flex-col gap-8 font-semibold text-xl text-slate-900 lg:flex-row max-lg:p-6">
                             <li>
-                                <a
+                                <Link to={'/'}
                                     href="#"
                                     className="text-[#f7444e] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
                                     aria-current="page"
                                 >
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link to={'/sehife'}
                                     href="#"
                                     className="hover:text-[#f7444e] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
                                 >
                                     Pages
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link to={'/mehsul'}
                                     href="#"
                                     className="hover:text-[#f7444e] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
                                 >
                                     Products
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link to={'/blog'}
                                     href="#"
                                     className="hover:text-[#f7444e] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
                                 >
                                     Blog
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link to={'/contact'}
                                     href="#"
                                     className="hover:text-[#f7444e] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
                                 >
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
